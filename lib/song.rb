@@ -51,7 +51,7 @@ class Song
   def self.new_from_filename(file)
     x = file.split("-")
     song = Song.new 
-    song.name = y
+    song.name = y[1].split(".mp3")
     song.artist_name = x[0].split(" ")
     song.save
     song
