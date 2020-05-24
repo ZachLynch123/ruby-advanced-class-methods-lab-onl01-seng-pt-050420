@@ -47,6 +47,10 @@ class Song
   def self.all
     @@all
   end
+  
+  def self.new_from_filename
+    
+  end
 
   def save
     self.class.all << self
