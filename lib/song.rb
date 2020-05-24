@@ -52,7 +52,8 @@ class Song
     x = file.split("-")
     y = file.split(".mp3")
     song = Song.new 
-    song.name = x[0].split(" ")
+    song.name = y
+    song.artist_name = x[0].split(" ")
     song.save
     song
   end
